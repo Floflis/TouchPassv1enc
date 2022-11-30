@@ -1,14 +1,17 @@
 const myArgs = process.argv.slice(2);
-console.log('myArgs: ', myArgs);
+//console.log('myArgs: ', myArgs);
 
+const { exec } = require("child_process");
 switch (myArgs[0]) {
-  case 'insult':
-    console.log(myArgs[1], 'smells quite badly.');
+  case 'encrypt':
+    execontent = 'node encrypt.js' + " '" + myArgs[1] + "' '" + myArgs[2] + "'"
+    exec(execontent, (error, stdout, stderr) => {if (error){console.log(`error: ${error.message}`);return;}if (stderr){console.log(`stderr: ${stderr}`);return;}console.log(stdout);});
     break;
-  case 'compliment':
-    console.log(myArgs[1], 'is really cool.');
+  case 'decrypt':
+    execontent = 'node decrypt' + " '" + myArgs[1] + "' '" + myArgs[2] + "'"
+    exec(execontent, (error, stdout, stderr) => {if (error){console.log(`error: ${error.message}`);return;}if (stderr){console.log(`stderr: ${stderr}`);return;}console.log(stdout);});
     break;
   default:
-    console.log('Sorry, that is not something I know how to do.');
+    console.log('Unknown command.');
 }
 // credits for above: https://nodejs.org/en/knowledge/command-line/how-to-parse-command-line-arguments/

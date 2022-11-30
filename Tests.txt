@@ -1,0 +1,3 @@
+content: 'MODE=UL&TYPE=V&LID=abcdef&LPW=password&AN=20022002' (without quotes)
+key: 'my secretkey 123' (without quotes; exactly 16 characters)
+result: HcMV322sPPrFonlvXZ5pvFpXABVrxYVAXrEr9vcu7TIFOPNQVGq5svEv3959sRDxkDHB/nav80iGMPBiz8bDeA==
