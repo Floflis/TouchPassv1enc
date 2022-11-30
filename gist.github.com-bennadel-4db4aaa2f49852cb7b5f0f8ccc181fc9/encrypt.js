@@ -1,3 +1,4 @@
+// credits: https://gist.github.com/bennadel/4db4aaa2f49852cb7b5f0f8ccc181fc9
 // Require the core node modules.
 var crypto = require( "crypto" );
 
