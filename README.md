@@ -1,4 +1,4 @@
-## How to install
+## How to use
 
 Clone/download the repo, enter its folder and run:
 
@@ -6,14 +6,14 @@ Clone/download the repo, enter its folder and run:
 npm install
 ```
 
-## How to use:
+### Commands:
 
-### Encrypt:
+#### Encrypt:
 ```bash
 node main.js encrypt 'MODE=UL&TYPE=V&LID=abcdef&LPW=password&AN=20022002' 'my secretkey 123'
 ```
 
-### Decrypt:
+#### Decrypt:
 ```bash
 node main.js decrypt 'HcMV322sPPrFonlvXZ5pvFpXABVrxYVAXrEr9vcu7TIFOPNQVGq5svEv3959sRDxkDHB/nav80iGMPBiz8bDeA==' 'my secretkey 123'
 ```
