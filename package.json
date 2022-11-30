@@ -1,0 +1,7 @@
+{
+    "name": "testtouchpass",
+    "main": "main.js",
+    "dependencies": {
+        "crypto-js": "4.0.0"
+    }
+}
